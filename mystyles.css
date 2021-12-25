@@ -19,7 +19,7 @@ body {
   }
 
 .chip {
-    display: inline-block;
+    display:inline-block;
     padding: 0 25px;
     height: 50px;
     font-size: 16px;
@@ -133,4 +133,23 @@ div button{
   from {left: 0px;}
   to {left: 630px;}
   
+}
+
+
+.cheep {
+  display:flow-root;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.cheep img {
+  float:left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
