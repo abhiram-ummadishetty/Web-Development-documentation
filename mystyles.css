@@ -3,7 +3,9 @@ body {
     
 }
 
-
+.middle{
+  text-align: center;
+}
 
 .closebtn {
     padding-left: 10px;
@@ -137,7 +139,7 @@ div button{
 
 
 .cheep {
-  display:flow-root;
+  display:flexbox;
   padding: 0 25px;
   height: 50px;
   font-size: 16px;
