@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Waterfall&display=swap');
+
+body {
+    background-color:rgb(243, 208, 241);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    font-family: 'Island Moments';
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+
+nav ul{
+    display:flex;
+    list-style-type: none;
+    background-color: black;
+    height: 50px;
+    color:rgb(202, 236, 174);
+}
+
+ul li a {
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color:silver;
+    position: relative;
+
+}
+
+ul li a::before {
+    content: "";
+    width: 0px;
+    height: 10px;
+    background:gold;
+    position: absolute;
+    top: 100%;
+    left:10px;
+    transition: .5s;
+}
+
+ul li a:hover::before {
+    width: 50%;
+    transform: translateX(100%);
+}
+
+.logo img{
+    width: 70px;
+    height: 50px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.Container{
+    min-height: 70vh;
+    background-color: black;
+    color:white;
+    font-family:'Island Moments';
+    display: flex;
+    margin: 25px auto;
+    width: 60% ;
+    border-radius: 15px;
+    padding: 20px;
+    background-image: url(./images/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+
+.SongItem{
+
+    height:50px;
+    font-size:medium;
+    font-family:sans-serif;
+    display: flex;
+    background-color: blueviolet;
+    width:100%;
+    margin:15px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    text-size-adjust:20px;
+
+}
+
+.SongItem img{
+
+    width: 40px;
+    margin: 0 20px 0;
+    border-radius: 30px;
+
+
+
+    
+}
+.timestamp{
+
+    margin: 0 10px 0;
+    padding: 0px;
+}
+
+.button{
+
+    padding: 10px;
+    cursor: pointer;
+}
+
+.floor{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color:rgb(16, 175, 29);
+    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+#slidebar{
+    width:80%;
+    cursor:pointer;
+}
+.SongInfo{
+     
+    position: absolute;
+    left:3%;
+    padding-bottom: 5px;
+}
+
+.SongInfo img{
+    left:1%;
+    height: 5%;
+    width: 12%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+
+}
+
+.icons{
+
+    margin-top:20px;
+    cursor: pointer;
+    
+}
